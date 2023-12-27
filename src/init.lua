@@ -191,8 +191,8 @@ export type Character = {
     GetDefaultProps: (Character) -> AffectableHumanoidProps;
     GetAllStatusEffects: (Character) -> {StatusEffect<any>};
     GetAllActiveStatusEffects: (Character) -> {StatusEffect<any>};
-    GetAllStatusStatusEffectsOfType: (Character, StatusEffectConstructor<any>) -> {StatusEffect<any>};
-    GetAllActiveStatusStatusEffectsOfType: (Character, StatusEffectConstructor<any>) -> {StatusEffect<any>};
+    GetAllStatusEffectsOfType: (Character, StatusEffectConstructor<any>) -> {StatusEffect<any>};
+    GetAllActiveStatusEffectsOfType: (Character, StatusEffectConstructor<any>) -> {StatusEffect<any>};
     HasStatusEffects: (Character, {StatusEffectConstructor<any>}) -> boolean;
     GetSkillFromString: (Character, string) -> Skill<any, any, any>?;
     GetSkillFromConstructor: (Character, SkillConstructor<any, any, any>) -> Skill<any, any, any>?;
